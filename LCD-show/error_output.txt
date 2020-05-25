@@ -1,0 +1,10 @@
+[1mdpkg:[0m dependency problems prevent configuration of xserver-xorg-input-evdev:
+ xserver-xorg-input-evdev depends on xorg-input-abi-24; however:
+  Package xorg-input-abi-24 is not installed.
+ xserver-xorg-input-evdev depends on xserver-xorg-core (>= 2:1.18.99.901); however:
+  Package xserver-xorg-core is not installed.
+
+[1mdpkg:[0m error processing package xserver-xorg-input-evdev (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ xserver-xorg-input-evdev

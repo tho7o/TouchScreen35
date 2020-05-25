@@ -1,24 +1,16 @@
 # INSTALLING TOUCHSCREEN 3.5" TO RASPBERRYpi 3B+
 
-### Clear old libraries (if exists)
-* sudo rm -rf LCD-show
-
-### Get the repo
-* git clone  https://github.com/goodtft/LCD-show.git
-
 ### Give exec permission
-* chmod -R 755 LCD-show
+* sudo chmod -R 755 LCD-show
 
-### Launch the script for the installation
+### Launch the script inside the LCD-show
 * cd LCD-show/
 * sudo ./LCD35-show
 
-## After installed, 
-* sudo nano /etc/X11/xorg.conf.d/99-calibration.conf
-
-## add this two lines just before "EndSection"
-* Option "InvertY" "true"
-* Option "InvertX" "true"
+## If you want rotate the screen, 180 degress after auto-reboot, launch: 
+* cd LCD-show
+* sudo ./rotate 180 
+### You can rotate 0, 90, 180 or 270
 
 ## Finally, reboot.
 * reboot
